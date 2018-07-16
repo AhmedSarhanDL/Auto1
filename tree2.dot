@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="horsepower <= 118.0\nmse = 65561190.482\nsamples = 205\nvalue = 13297.377"] ;
+1 [label="horsepower <= 89.0\nmse = 13894030.55\nsamples = 155\nvalue = 9927.665"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="symboling <= 3.5\nmse = 3874405.884\nsamples = 88\nvalue = 7716.319"] ;
+1 -> 2 ;
+3 [label="mse = 5640905.721\nsamples = 34\nvalue = 8876.532"] ;
+2 -> 3 ;
+4 [label="highway-mpg <= 37.5\nmse = 1380987.732\nsamples = 54\nvalue = 6985.814"] ;
+2 -> 4 ;
+5 [label="mse = 1362510.454\nsamples = 25\nvalue = 7515.84"] ;
+4 -> 5 ;
+6 [label="mse = 945962.719\nsamples = 29\nvalue = 6528.895"] ;
+4 -> 6 ;
+7 [label="highway-mpg <= 28.5\nmse = 12195522.941\nsamples = 67\nvalue = 12832.119"] ;
+1 -> 7 ;
+8 [label="mse = 8414288.566\nsamples = 30\nvalue = 15107.967"] ;
+7 -> 8 ;
+9 [label="horsepower <= 101.329\nmse = 7656745.595\nsamples = 37\nvalue = 10986.838"] ;
+7 -> 9 ;
+10 [label="mse = 8572837.506\nsamples = 18\nvalue = 11894.778"] ;
+9 -> 10 ;
+11 [label="mse = 5268036.953\nsamples = 19\nvalue = 10126.684"] ;
+9 -> 11 ;
+12 [label="city-mpg <= 17.5\nmse = 81407807.775\nsamples = 50\nvalue = 23743.486"] ;
+0 -> 12 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+13 [label="mse = 87548805.327\nsamples = 22\nvalue = 29881.787"] ;
+12 -> 13 ;
+14 [label="mse = 23717164.106\nsamples = 28\nvalue = 18920.536"] ;
+12 -> 14 ;
+}
